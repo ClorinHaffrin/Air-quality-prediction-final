@@ -7,9 +7,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 import os
-print("Files in directory:", os.listdir('fast-api'))
+print("Files in directory:", os.listdir('fast-server'))
 
-with open('fast-api/best_catboost_model.pkl', 'rb') as file:
+with open('fast-server/best_catboost_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
