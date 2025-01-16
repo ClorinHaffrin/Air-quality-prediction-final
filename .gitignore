@@ -1,0 +1,51 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env.bak/
+
+# Distribution and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Flask-related files
+instance/
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Pytest and coverage
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Static and media files
+static/
+media/
+
+# Other temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumb
+node_modules
+myenv
+.vscode
