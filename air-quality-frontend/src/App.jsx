@@ -33,7 +33,7 @@ function App() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('https://air-quality-prediction-final-6.onrender.com', {
+        const response = await fetch('https://air-quality-prediction-final-6.onrender.com/predict', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
