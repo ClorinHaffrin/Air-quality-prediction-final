@@ -6,9 +6,12 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# Load the trained CatBoost model
+import os
+print("Files in directory:", os.listdir('fast-api'))
+
 with open('fast-api/best_catboost_model.pkl', 'rb') as file:
     model = pickle.load(file)
+
 
 @app.route('/', methods=['GET'])
 def home():
